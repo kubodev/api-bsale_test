@@ -19,7 +19,7 @@ http://50.19.163.37:3000/categoria/:id
 (el id de be ser número y debe tenerlo en la tabla)
 
 Buscar por nombre
-http://50.19.163.37:3000//producto/:name
+http://50.19.163.37:3000/producto/:name
 (Esta API buscará un string y lo comparará con los nombres de los productos y enviará los productos que tengan ese nombre o parecido)
 
 La API es pequeña por el tiempo limitado que se dipo para la prueba.
