@@ -62,7 +62,7 @@ router.get('/categoria/:id', (req, res) => {
 // buscar un producto por nombre
 router.get('/producto/:name', (req, res) => {
   
-  const { id } = req.params; 
+  const { name } = req.params; 
 
   const sql = `SELECT * FROM product WHERE name like '%${name}%'`;
   
