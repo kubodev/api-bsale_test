@@ -1,2 +1,29 @@
 # api-bsale_test
-Objetivo Determinar si el candidato está en condiciones de interactuar con una base de datos a través de una aplicación web, implementando cliente y servidor. Ejercicio Construir una tienda online que despliegue productos agrupados por la categoría a la que pertenecen. Además, debes agregar un buscador, el cual tiene que estar implementado a nivel de servidor, es decir, los productos deben llegar filtrados al cliente. Opcionalmente, puedes implementar filtros por atributo, ordenar productos, paginación, etc. La aplicación de cliente tiene que estar desarrollada con vanilla javascript, sin ningún framework o librería. Finalmente, debes disponibilizar la aplicación de forma pública (de preferencia en Heroku) y el repositorio con el código.
+El objetivo de esta API, es presentar una prueba para Bsale.
+
+La API está hecha en nodejs con express y levantada en un servidor EC2 de aws, con una ip estatica 50.19.163.37:3000. Está conectada a una base de datos Mysql que proporsionó Bsale, es un base de datos peque, con 2 tablas, "product" con 57 productos y "category" con 7 categorias.
+
+Mode de uso.
+
+La API devuevle un documento en Json
+
+Traer todo los productos
+http://50.19.163.37:3000/
+
+Obtener un producto
+http://50.19.163.37:3000/:id
+(el id de be ser número y debe tenerlo en la tabla)
+
+Obtener productos por categoria
+http://50.19.163.37:3000/categoria/:id
+(el id de be ser número y debe tenerlo en la tabla)
+
+Buscar por nombre
+http://50.19.163.37:3000//producto/:name
+(Esta API buscará un string y lo comparará con los nombres de los productos y enviará los productos que tengan ese nombre o parecido)
+
+La API es pequeña por el tiempo limitado que se dipo para la prueba.
+
+Gracias.
+
+Moise Magna (KuboDev)

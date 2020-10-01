@@ -41,7 +41,7 @@ router.get('/:id', (req, res) => {
     
 });
 
-// obtiene un producto
+// obtiene una categoria
 router.get('/categoria/:id', (req, res) => {
   const { id } = req.params; 
 
