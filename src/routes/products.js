@@ -79,6 +79,24 @@ router.get('/producto/:name', (req, res) => {
   
 });
 
+// obtiene ofertas
+router.get('/oferta/:name', (req, res) => {
+  console.log('entro en oferta')
+  const sql = 'SELECT * FROM product order by  discount DESC limit  4';
+  
+    mysqlConnection.query(sql, (err, rows, fields) => {
+      if (err) throw err;
+      if(rows.length > 0) {
+        res.json(rows);
+      }else {
+        const respuesta = {'err' : true, 'mensaje' : err};
+
+        res.send(respuesta);
+      }
+  });
+  
+
+});
 
 
 
