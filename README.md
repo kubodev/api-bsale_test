@@ -22,6 +22,10 @@ Buscar por nombre
 http://50.19.163.37:3000/producto/:name
 (Esta API buscará un string y lo comparará con los nombres de los productos y enviará los productos que tengan ese nombre o parecido)
 
+Productos en oferta
+http://localhost:3000/oferta/1
+( traerá los productos con mayor descuento, con un limite de 4)
+
 La API es pequeña por el tiempo limitado que se dipo para la prueba.
 
 Gracias.
