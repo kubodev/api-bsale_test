@@ -6,13 +6,10 @@ const mysqlConnection = mysql.createConnection({
     database: 'bsale_test'
 });
 
-mysqlConnection.connect(function (err) {
-    if(err) {
-        console.log(err);
-        return;
-    } else {
-        console.log('Base de datos conectada');
-    }
+mysqlConnection.connect(err => {
+    if (err) throw console.err();
+    console.log('Base de datos conectada');
 });
 
 module.exports = mysqlConnection;
+

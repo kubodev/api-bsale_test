@@ -1,10 +1,11 @@
 {
-  "name": "api-bsale_test",
-  "version": "1.0.0",
+  "name": "api-bsale-test",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src src/index.js"
   },
   "keywords": [],
   "author": "",
