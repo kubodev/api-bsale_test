@@ -8,22 +8,22 @@ Mode de uso.
 La API devuevle un documento en Json
 
 Traer todo los productos
-http://50.19.163.37:3000/
+http://kubodev.ml:3000/
 
 Obtener un producto
-http://50.19.163.37:3000/:id
+http://kubodev.ml:3000/:id
 (el id de be ser número y debe tenerlo en la tabla)
 
 Obtener productos por categoria
-http://50.19.163.37:3000/categoria/:id
+http://kubodev.ml:3000/:3000/categoria/:id
 (el id de be ser número y debe tenerlo en la tabla)
 
 Buscar por nombre
-http://50.19.163.37:3000/producto/:name
+http://kubodev.ml:3000/:3000/producto/:name
 (Esta API buscará un string y lo comparará con los nombres de los productos y enviará los productos que tengan ese nombre o parecido)
 
 Productos en oferta
-http://localhost:3000/oferta/1
+http://kubodev.ml:3000/oferta/1
 ( traerá los productos con mayor descuento, con un limite de 4)
 
 La API es pequeña por el tiempo limitado que se dipo para la prueba.
