@@ -19,7 +19,7 @@ http://kubodev.ml:3000/:3000/categoria/:id
 (el id de be ser número y debe tenerlo en la tabla)
 
 Buscar por nombre
-http://kubodev.ml:3000/:3000/producto/:name
+http://kubodev.ml:3000/producto/:name
 (Esta API buscará un string y lo comparará con los nombres de los productos y enviará los productos que tengan ese nombre o parecido)
 
 Productos en oferta
