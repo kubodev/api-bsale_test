@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
 router.get('/categoria/:id', (req, res) => {
   const { id } = req.params; 
 
-  const sql = `SELECT id, name FROM product WHERE category = '${id}'`;
+  const sql = `SELECT p.id, p.name, p.url_image, p.price, p.discount, c.name as "categoriaNom"  FROM product p left join category c ON p.category = c.id WHERE p.category = '${id}'`;
   
   mysqlConnection.query(sql, (err, rows, fields) => {
     if (err) throw err;
